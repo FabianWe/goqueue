@@ -26,6 +26,7 @@ I ran to different benchmarks: One that first pushes 100,000 elements, then pops
 The second one alternates between pushes and pops, it does the following 250,000 times: Pop one element, push two elements (I think that's something you usually do with a queue...). I've also tested it with smaller and bigger benchmarks.
 
 Here are the results on my computer, the table shows the time / op (average for one run) as go benchmark outputs them:
+
 | Benchmark                            | Slice            | Linked            | Extendable       |
 |--------------------------------------|------------------|-------------------|------------------|
 | Sequential (100000, 50000, 75000)    | 1.989.646 ns / op  | 12.391.950 ns / op  | 4.511.841 ns / op  |
